@@ -1,0 +1,81 @@
+\newcommand{\pdftitel}{PDFTITEL}
+\newcommand{\autor}{Autor}
+\newcommand{\arbeit}{ART DER ARBEIT}
+\input{ads/header}
+
+% Ab jetzt können auch Umlaute verwendet werden
+
+\newcommand{\titel}{TITEL}
+\newcommand{\martrikelnr}{Matrikelnr}
+\newcommand{\kurs}{Kurs}
+\newcommand{\datumAbgabe}{01.09.2014}
+\newcommand{\firma}{Firma}
+\newcommand{\firmenort}{Firmenort}
+\newcommand{\abgabeort}{Stuttgart}
+\newcommand{\abschluss}{Bachelor of Science}
+\newcommand{\studiengang}{Wirtschaftsinformatik}
+\newcommand{\dhbw}{Stuttgart}
+\newcommand{\betreuertitel}{Betreuertitel}
+\newcommand{\betreuerfirma}{Betreuername}
+\newcommand{\funktion}{Betreuerfunktion}
+\newcommand{\betreuer}{DH-Betreuer}
+\newcommand{\zeitraum}{12 Wochen}
+\newcommand{\arbeitsart}{1.Projektarbeit}
+\newcommand{\dnd}{D\& D}
+
+\begin{document}
+
+	% Deckblatt
+	\begin{spacing}{1}
+	\setlength{\hoffset}{-10mm}
+		\input{ads/deckblatt}
+	\end{spacing}
+	\newpage
+
+	\renewcommand{\thepage}{\Roman{page}}
+	\setcounter{page}{1}
+
+	\pagestyle{plain}
+
+	% Inhaltsverzeichnis
+	\begin{spacing}{1.1}
+		\setcounter{tocdepth}{1}
+		%für die Anzeige von Unterkapiteln im Inhaltsverzeichnis
+		\setcounter{tocdepth}{2}
+		\tableofcontents
+	\end{spacing}
+	\newpage
+	
+	% Abkürzungsverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listofacs}
+	\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+	\input{ads/acronyms}
+	\newpage
+	
+	% Abbildungsverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoffig}
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	\listoffigures
+	\newpage	
+	
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}
+	
+	% Hier den Inhalt einfügen
+	%\input{kapitel/kapitel01}
+
+
+	% Literaturverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoflit}
+	\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+	\input{ads/Literatur}
+	\newpage
+	
+	% Erklärung
+	\input{ads/erklaerung}
+	\newpage
+
+\end{document}
