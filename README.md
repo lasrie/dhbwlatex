@@ -1,7 +1,7 @@
 dhbwlatex
 =========
 
-Eine genauerer Beschreibung ist zu finden unter http://lasrie.github.io/dhbwlatex/
+Eine genauere Beschreibung ist zu finden unter http://lasrie.github.io/dhbwlatex/
 
 
 Die LaTeX-Vorlage ist angepasst an die Formatvorlagen der DHBW-Stuttgart, Fakultät Wirtschaft, für den Studiengang Wirtschaftsinformatik. Die Vorgaben wurden abgerufen am 27.08.2014 und liegen mit Stand vom 02/2013 vor. 
