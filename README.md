@@ -1,6 +1,9 @@
 dhbwlatex
 =========
 
+DIESE VORLAGE IST NICHT MEHR AKTUELL. DIE OFFIZIELLE LaTeX-VORLAGE BEFINDET SICH IM MOODLE-KURS WINF-ALLG 
+
+
 Eine genauere Beschreibung ist zu finden unter http://lasrie.github.io/dhbwlatex/
 
 
